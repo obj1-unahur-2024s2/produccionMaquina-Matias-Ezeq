@@ -1,11 +1,12 @@
 object maquina {
-  var produccion = []
+  var produccion = [22,1,5,75,58,2]
 
-  method algunDiaSeProdujo(cantidad){
-    return produccion.contains(cantidad)
-  }
+  method algunDiaSeProdujo(cantidad) = produccion.contains(cantidad)
+
 
   method maximoValorDeProduccion() = produccion.max()
+
+  method valoresDeProduccionPares() = produccion.filter { number => number.even() }
 
   method producir(cantidad){
     produccion.add(cantidad)
