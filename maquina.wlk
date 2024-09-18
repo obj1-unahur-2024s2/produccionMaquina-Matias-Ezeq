@@ -12,4 +12,6 @@ object maquina {
     produccion.add(cantidad)
   }
 
+  method produccionEsAcotada(min,max) = produccion.max()<=max and produccion.min()>=min
+
 }

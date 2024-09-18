@@ -10,4 +10,8 @@ describe "group of tests ..." {
     assert.notThat(maquina.valoresDeProduccionPares().isEmpty())
   }
 
+  test "la produccion es acotada entre 1 y 100"{
+    assert.that(maquina.produccionEsAcotada(1,100))
+  }
+
 }
